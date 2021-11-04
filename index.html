@@ -179,7 +179,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/11/04/JavaWeb%E4%BB%8B%E7%BB%8D/" class="post-title-link" itemprop="url">Database</a>
+            <a href="/2021/11/04/JavaWeb%E4%BB%8B%E7%BB%8D/" class="post-title-link" itemprop="url">Javaweb介绍</a>
         </h2>
 
         <div class="post-meta">
@@ -190,7 +190,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-11-04 15:53:18 / 修改时间：15:54:20" itemprop="dateCreated datePublished" datetime="2021-11-04T15:53:18+08:00">2021-11-04</time>
+              <time title="创建时间：2021-11-04 15:53:18 / 修改时间：16:01:13" itemprop="dateCreated datePublished" datetime="2021-11-04T15:53:18+08:00">2021-11-04</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -267,174 +267,14 @@
 </li>
 </ul>
 <p>web应用程序编写完毕后，若想提供给外界访问：需要一个服务器来统一管理；</p>
-<h4 id="静态web"><a href="#静态web" class="headerlink" title="静态web"></a>静态web</h4><ul>
-<li><p>*.htm , *.html,这些都是网页的后缀，如果服务器上一直存在这些东西，我们就可以直接进行读取。通络：</p>
-<p><img src="C:\Users\zhanglianghong\AppData\Roaming\Typora\typora-user-images\image-20210904160503493.png" alt="image-20210904160503493"></p>
-</li>
-<li><p>静态web存在的的缺点</p>
-<ul>
-<li><p>Web页面无法动态更新，所有用户看到的都是同一个页面</p>
-<ul>
-<li>轮播图，点击特效：伪动态</li>
-<li>JavaScript(实际开发中，它用的最多)</li>
-<li>VBScript</li>
-</ul>
-</li>
-<li><p>它无法和数据库交互(数据无法持久化，用户无法交互)</p>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="动态web"><a href="#动态web" class="headerlink" title="动态web"></a>动态web</h4><p>页面会动态展示，Web的页面展示的效果因人而异</p>
-<p><img src="C:\Users\zhanglianghong\AppData\Roaming\Typora\typora-user-images\image-20210904162005165.png" alt="image-20210904162005165"></p>
-<p>缺点</p>
-<ul>
-<li>假如服务器的动态Web资源出现了错误，我们需要重新编写我们的<strong>后台程序</strong>，重新发布<ul>
-<li>停机维护</li>
-</ul>
-</li>
-</ul>
-<p>优点：</p>
-<ul>
-<li><p>Web页面可以动态更新，所有用户看到的都不是同一个页面</p>
-</li>
-<li><p>它可以和数据库交互(数据持久化)</p>
-</li>
-</ul>
-<p><img src="C:\Users\zhanglianghong\AppData\Roaming\Typora\typora-user-images\image-20210904162535715.png" alt="image-20210904162535715"></p>
-<h6 id="ASP"><a href="#ASP" class="headerlink" title="ASP"></a>ASP</h6><ul>
-<li>微软：国内最早流行的就是ASP；</li>
-<li>在HTML中嵌入了VB的脚本，ASP+OM；</li>
-<li>在ASP开发中，基本一个页面都有几千行的业务代码，页面极其混乱，维护成本高</li>
-<li>c#</li>
-<li>IIS</li>
-</ul>
-<h6 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h6><ul>
-<li>PHP开发速度很快，功能很强大，跨平台，代码很简单</li>
-<li>无法承载大访问的情况(局限性)</li>
-</ul>
-<h6 id="JSP-Servlet："><a href="#JSP-Servlet：" class="headerlink" title="JSP/Servlet："></a>JSP/Servlet：</h6><p>B/S：浏览和服务器</p>
-<p>C/S：客户端和服务器</p>
-<ul>
-<li><p>sun公司主推的B/S架构</p>
-</li>
-<li><p>基于Java语言的(所有大公司，或者一些开源的组件，都是用java写的)</p>
-</li>
-<li><p>可以承载三高(高并发，高性 能，高可用)问题带来的影响</p>
-</li>
-<li><p>语法像ASP，ASP–&gt;JSP，加强市场强度</p>
-</li>
-</ul>
-<h4 id="Web服务器"><a href="#Web服务器" class="headerlink" title="Web服务器"></a>Web服务器</h4><p>服务器是一种被动的操作，用来处理用户的一些请求和一些相应信息</p>
-<p><strong>IIS</strong></p>
-<p>微软的：ASP…Windows中自带的</p>
-<p><strong>Tomcat</strong></p>
-<p>工作3-5年之后，可以尝试手写Tomcat服务器</p>
-<p>下载tomcat：</p>
-<ul>
-<li>安装 or 解压</li>
-<li>了解配置文件及目录结构</li>
-</ul>
-<p><strong>安装</strong></p>
-<p>Tomcat官网：<a target="_blank" rel="noopener" href="https://tomcat.apache.org/">Apache Tomcat® - Welcome!</a></p>
-<p>访问测试:<a target="_blank" rel="noopener" href="http://localhost:8080/">Apache Tomcat/9.0.52</a></p>
-<p><strong>配置</strong></p>
-<p>可以配置启动的端口号</p>
-<ul>
-<li>Tomcat 8080</li>
-<li>mysql 3306</li>
-<li>http 80</li>
-<li>https 443</li>
-</ul>
-<p>可以配置主机的名称</p>
-<ul>
-<li>默认主机名为localhost–&gt;127.0.0.1</li>
-<li>默认网站应用存放的位置为：webapps</li>
-</ul>
-<p><strong>面试题</strong></p>
-<p>请你谈一谈网站是如何进行访问的？</p>
-<ul>
-<li>输入一个域名：回车</li>
-<li>检查的hosts配置文件下有没有这个域名的映射<ul>
-<li>有，直接返回对应的IP地址</li>
-<li>没有，去DNS上面去找</li>
-</ul>
-</li>
-</ul>
-<h4 id="发布一个web网站"><a href="#发布一个web网站" class="headerlink" title="发布一个web网站"></a>发布一个web网站</h4><ul>
-<li><p>将自己写的网站，放到服务器(Tomcat)中指定的web应用的文件夹(webapps)下，就可以访问了</p>
-<p>网站应该有的结构</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">-- webapps:Tomcat服务器的web目录</span><br><span class="line">    -ROOT</span><br><span class="line">    -Web : 网站的目录名</span><br><span class="line">        - WEB-INF</span><br><span class="line">        	- classes : java 程序</span><br><span class="line">            - lib:web应用所依赖的jar包</span><br><span class="line">            - web.xml : 网站的配置文件</span><br><span class="line">        - index.html  默认的首页</span><br><span class="line">        - <span class="keyword">static</span></span><br><span class="line">            - css</span><br><span class="line">                - style.css</span><br><span class="line">            - js</span><br><span class="line">            - img</span><br><span class="line">        - ...</span><br></pre></td></tr></table></figure>
-
-<h4 id="Http"><a href="#Http" class="headerlink" title="Http"></a>Http</h4><p>HTTP(超文本传输协议) 是一个简单的请求-响应协议，它通常运行在TCP之上</p>
-<ul>
-<li>文本：html，字符串……</li>
-<li>超文本：图片，音乐，视频，定位，地图……</li>
-<li>端口：80</li>
-</ul>
-<p>Https</p>
-<ul>
-<li>s : 安全的</li>
-<li>端口：443  </li>
-</ul>
-</li>
-</ul>
-<h5 id="两个时代"><a href="#两个时代" class="headerlink" title="两个时代"></a>两个时代</h5><ul>
-<li>http1.0<ul>
-<li>HTTP/1.0 : 客户端可以与web服务器连接后，只能获得一个web资源，断开连接</li>
-</ul>
-</li>
-<li>http2.0<ul>
-<li>HTTP/1.1:客户端可以与web服务器连接后，只能获得多个web资源。</li>
-</ul>
-</li>
-</ul>
-<h5 id="Http请求"><a href="#Http请求" class="headerlink" title="Http请求"></a>Http请求</h5><ul>
-<li>客户端– 发请求(Request)—服务器</li>
-</ul>
-<p>百度: </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">请求 URL: https:<span class="comment">//www.baidu.com/</span></span><br><span class="line">请求方法: GET</span><br><span class="line">状态代码: <span class="number">200</span> OK</span><br><span class="line">远程地址: <span class="number">39.156</span><span class="number">.66</span><span class="number">.18</span>:<span class="number">443</span></span><br><span class="line">引用站点策略: strict-origin-when-cross-origin</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Accept: text/html</span><br><span class="line">Accept-Encoding: gzip, deflate, br</span><br><span class="line">Accept-Language: zh-CN,zh;q=<span class="number">0.9</span>,en;q=<span class="number">0.8</span>,en-GB;q=<span class="number">0.7</span>,en-US;q=<span class="number">0.6</span>           <span class="comment">//语言</span></span><br><span class="line">Cache-Control: max-age=<span class="number">0</span></span><br><span class="line">Connection: keep-alive</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>请求行</p>
-<ul>
-<li>请求行中的请求方式：GET</li>
-<li>请求方式Get，Post，HEAD……<ul>
-<li>get:一次请求携带的参数比较少，会在浏览器的地址栏里显示数据内容，不安全，但高效</li>
-<li>post : 请求能够携带的参数没有限制，大小没有限制，不会在浏览器的URL地址栏显示数据内容，安全，但不高效</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>请求头：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Accept: 告诉浏览器，它所支持的数据类型</span><br><span class="line">Accept-Encoding: 告诉浏览器支持那种编码格式 GBK，UTF-<span class="number">8</span>，GB2312 </span><br><span class="line">Accept-Language:ISO8859-<span class="number">1</span>  告诉浏览器，它的语言环境<span class="comment">//语言</span></span><br><span class="line">Cache-Control: 缓存控制</span><br><span class="line">Connection:告诉浏览器，请求完成是断开还是保持连接</span><br><span class="line">HOST:主机..../.</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h5 id="Http响应"><a href="#Http响应" class="headerlink" title="Http响应"></a>Http响应</h5><ul>
-<li>服务器 – 响应 – 客户端</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Cache-Control: <span class="keyword">private</span>     <span class="comment">//缓存控制</span></span><br><span class="line">Connection: keep-alive     <span class="comment">//连接</span></span><br><span class="line">Content-Encoding: gzip     <span class="comment">//编码</span></span><br><span class="line">Content-Type: text/html;charset=utf-<span class="number">8</span>   <span class="comment">//类型</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h5 id="响应体"><a href="#响应体" class="headerlink" title="响应体"></a>响应体</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Accept: 告诉浏览器，它所支持的数据类型</span><br><span class="line">Accept-Encoding: 告诉浏览器支持那种编码格式 GBK，UTF-<span class="number">8</span>，GB2312 </span><br><span class="line">Accept-Language:ISO8859-<span class="number">1</span>  告诉浏览器，它的语言环境<span class="comment">//语言</span></span><br><span class="line">Cache-Control: 缓存控制</span><br><span class="line">Connection:告诉浏览器，请求完成是断开还是保持连接</span><br><span class="line">HOST:主机..../.</span><br><span class="line">Refrush: 告诉客户端，多久刷新一次</span><br><span class="line">Location：让网页重新定位</span><br></pre></td></tr></table></figure>
-
-<h5 id="响应状态码"><a href="#响应状态码" class="headerlink" title="响应状态码"></a>响应状态码</h5><ul>
-<li><p>200：请求响应成功</p>
-</li>
-<li><p>4xx：找不到资源         404</p>
-</li>
-<li><p>3xx：请求重定向</p>
-<ul>
-<li>​    重定向：你重新到我给你的新位置去；</li>
-</ul>
-</li>
-<li><p>5xx：服务器代码错误   500   502：网关错误</p>
-</li>
-</ul>
-<h5 id="常用面试题"><a href="#常用面试题" class="headerlink" title="常用面试题"></a>常用面试题</h5><p>当你的浏览器中地址栏并回车的一瞬间到页面能够展示回来，经历了什么？  </p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/11/04/JavaWeb%E4%BB%8B%E7%BB%8D/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
